@@ -1,0 +1,8 @@
+CREATE TABLE SPACECRAFTS (
+    id BIGINT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    series VARCHAR(255) NOT NULL,
+    craft_type VARCHAR(255) NOT NULL,
+    crew_capacity INTEGER NOT NULL,
+    weight DOUBLE PRECISION NOT NULL
+);
