@@ -45,8 +45,7 @@ public class SpacecraftController extends CrudController<SpacecraftV1, Spacecraf
     )
     @GetMapping
     public ResponseEntity<Page<SpacecraftV1>> getAll(
-            @PageableDefault(size = 5, page = 0) Pageable pageable) {
-        return super.getAll(pageable);
+            @PageableDefault(size = 5, page = 0) Pageable pageable) {return super.getAll(pageable);
     }
 
     @Operation(
