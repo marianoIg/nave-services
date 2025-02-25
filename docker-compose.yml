@@ -1,15 +1,15 @@
 version: '3.9'
 
 services:
- # spacecrafts-mariano:
- #   image: marianoigarzabal/spacecrafts-mariano
- #   container_name: spacecrafts-mariano
- #   depends_on:
- #     - rabbitmq
- #   environment:
- #     - RABBITMQ_HOST=rabbitmq
- #   ports:
- #     - "1986:1986"
+  spacecrafts-mariano:
+    build: .
+    container_name: spacecrafts-mariano
+    depends_on:
+      - rabbitmq
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+    ports:
+      - "1986:1986"
 
   rabbitmq:
     image: rabbitmq:3.12-management
